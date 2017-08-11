@@ -7,11 +7,11 @@
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var UNIQUE_KEY_PROP_NAME = '__unique_key_prop__';
-var VALUE_PREFIX = '__value_prefix__' + Date.now() + '_';
+var VALUE_PREFIX = '__uid__' + Date.now() + '_';
 
 var defaultOptions = {
   key: UNIQUE_KEY_PROP_NAME,
-  valuePrefix: VALUE_PREFIX
+  enumerable: false
 };
 
 var uid = 0;
@@ -31,13 +31,13 @@ function objectId(obj, options) {
   if (isObject(obj)) {
     var _extend = extend(extend({}, defaultOptions), options),
         key = _extend.key,
-        valuePrefix = _extend.valuePrefix;
+        enumerable = _extend.enumerable;
 
     if (key in obj) {
       return obj[key];
     }
     var value = VALUE_PREFIX + uid++;
-    Object.defineProperty(obj, key, { value: value });
+    Object.defineProperty(obj, key, { value: value, enumerable: enumerable });
     return value;
   }
   return obj;

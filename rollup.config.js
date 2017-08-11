@@ -4,7 +4,7 @@ export default {
   entry: 'index.js',
   format: 'umd',
   moduleName: 'objectId',
-  dest: 'dist/object-id.js',
+  dest: 'dist/object_id.js',
   plugins: [
     babel({
       exclude: 'node_modules/**'
