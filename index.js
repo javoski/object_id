@@ -1,9 +1,9 @@
 const UNIQUE_KEY_PROP_NAME = '__unique_key_prop__'
-const VALUE_PREFIX = '__value_prefix__' + Date.now() + '_'
+const VALUE_PREFIX = '__uid__' + Date.now() + '_'
 
 const defaultOptions = {
   key: UNIQUE_KEY_PROP_NAME,
-  valuePrefix: VALUE_PREFIX
+  enumerable: false
 }
 
 let uid = 0
@@ -21,12 +21,12 @@ function isObject (obj) {
 
 function objectId (obj, options) {
   if (isObject(obj)) {
-    const { key, valuePrefix } = extend(extend({}, defaultOptions), options)
+    const { key, enumerable } = extend(extend({}, defaultOptions), options)
     if (key in obj) {
       return obj[key]
     }
     const value = VALUE_PREFIX + uid++
-    Object.defineProperty(obj, key, { value })
+    Object.defineProperty(obj, key, { value, enumerable })
     return value
   }
   return obj
