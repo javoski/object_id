@@ -19,7 +19,7 @@ const id = objectId(obj, options)
 ```
 
 ## Options
-<table class="table" width="100%" style="text-align: center">
+<table class="table" width="100%">
   <thead>
     <tr>
       <th width="20%">Option</th>
@@ -28,7 +28,7 @@ const id = objectId(obj, options)
       <th width="50%">Description</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody align="center">
     <tr>
       <td><code>key</code></td>
       <td>String</td>
