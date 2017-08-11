@@ -1,7 +1,7 @@
 {
   "name": "object-id",
   "version": "0.0.1",
-  "description": "A function that generate unique id for objects",
+  "description": "A function that generates a unique id for objects",
   "main": "dist/object-id.js",
   "scripts": {
     "test": "NODE_ENV=test ava",
