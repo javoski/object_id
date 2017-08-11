@@ -1,7 +1,7 @@
 # object-id
-##### A function that generates a unique id for objects
+A function that generates a unique id for objects
 
-## Installation
+### Installation
 npm or yarn
 ```bash
 npm install object-id
@@ -12,13 +12,13 @@ cdn
 <script src="https://unpkg.com/object-id"></script>
 ```
 
-## Usage
+### Usage
 ```js
 import objectId from 'object-id'
 const id = objectId(obj, options?)
 ```
 
-### Options
+#### Options
 <table class="table" width="100%">
   <thead>
     <tr>
