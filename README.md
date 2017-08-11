@@ -15,10 +15,10 @@ cdn
 ## Usage
 ```js
 import objectId from 'object-id'
-const id = objectId(obj, options)
+const id = objectId(obj, options?)
 ```
 
-## Options
+### Options
 <table class="table" width="100%">
   <thead>
     <tr>
