@@ -22,10 +22,18 @@ test('default options', t => {
   t.is(Object.keys(obj).map(k => obj[k]).indexOf(id), -1)
 })
 
-test('custom options', t => {
+test('option key', t => {
   const obj = {}
   const id = objectId(obj, { key: '_id' })
   t.is(id, obj._id)
   // non-enumerable
   t.is(Object.keys(obj).indexOf('_id'), -1)
+})
+
+test('option enumerable', t => {
+  const obj = {}
+  const id = objectId(obj, { key: '_id' , enumerable: true })
+  t.is(id, obj._id)
+  // enumerable
+  t.true(Object.keys(obj).indexOf('_id') > -1)
 })
