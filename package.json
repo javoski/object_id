@@ -2,7 +2,7 @@
   "name": "object_id",
   "version": "0.0.2",
   "description": "A function that generates a unique id for objects",
-  "main": "dist/object-id.js",
+  "main": "dist/object_id.js",
   "scripts": {
     "test": "NODE_ENV=test ava",
     "build": "rollup -c",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/javoski/object-id.git"
+    "url": "https://github.com/javoski/object_id.git"
   },
   "author": "javoski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/javoski/object-id/issues"
+    "url": "https://github.com/javoski/object_id/issues"
   },
-  "homepage": "https://github.com/javoski/object-id#readme",
+  "homepage": "https://github.com/javoski/object_id#readme",
   "devDependencies": {
     "ava": "^0.21.0",
     "babel-core": "^6.25.0",
