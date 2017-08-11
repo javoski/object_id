@@ -1,5 +1,5 @@
 {
-  "name": "object-id",
+  "name": "object_id",
   "version": "0.0.1",
   "description": "A function that generates a unique id for objects",
   "main": "dist/object-id.js",

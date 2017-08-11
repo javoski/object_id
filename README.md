@@ -1,20 +1,20 @@
-# object-id
+# object_id
 A function that generates a unique id for objects
 
 ### Installation
 npm or yarn
 ```bash
-npm install object-id
-yarn add object-id
+npm install object_id
+yarn add object_id
 ```
 cdn
 ```html
-<script src="https://unpkg.com/object-id"></script>
+<script src="https://unpkg.com/object_id"></script>
 ```
 
 ### Usage
 ```js
-import objectId from 'object-id'
+import objectId from 'object_id'
 const id = objectId(obj, options?)
 ```
 
