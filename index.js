@@ -22,7 +22,7 @@ function isObject (obj) {
 function objectId (obj, options) {
   if (isObject(obj)) {
     const { key, enumerable } = extend(extend({}, defaultOptions), options)
-    if (key in obj) {
+    if (obj.hasOwnProperty(key)) {
       return obj[key]
     }
     const value = VALUE_PREFIX + uid++
