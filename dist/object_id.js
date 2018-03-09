@@ -33,7 +33,7 @@ function objectId(obj, options) {
         key = _extend.key,
         enumerable = _extend.enumerable;
 
-    if (key in obj) {
+    if (obj.hasOwnProperty(key)) {
       return obj[key];
     }
     var value = VALUE_PREFIX + uid++;
